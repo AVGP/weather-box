@@ -14,11 +14,13 @@
   <weather-box location="Zurich, CH" metric="no"></weather-box>
 
   <h2>Units and location editable</h2>
-  <input id="location" placeholder="Zurich" />
-  <select id="metric">
-    <option value="yes">Metric</option>
-    <option value="no">Imperial</option>
-  </select>
+  <div>
+    <input id="location" placeholder="Zurich" />
+    <select id="metric">
+      <option value="yes">Metric</option>
+      <option value="no">Imperial</option>
+    </select>
+  </div>
   <weather-box id="editable" location="Zurich, CH" metric="yes"></weather-box>
 
   <script>
