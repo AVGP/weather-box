@@ -1,0 +1,10 @@
+{
+  "name": "weather-box",
+  "usage": "<weather-box location=\"London\" metric=\"no\"></weather-box>",
+  "description": "Displays weather data from the OpenWeatherMap API",
+  "links": {
+    "demo": "http://avgp.github.io/weather-box/index.html",
+    "repository": "https://github.com/avgp/weather-box",
+    "documentation": "https://github.com/AVGP/weather-box/blob/gh-pages/README.md"
+  }
+}

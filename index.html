@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>weather-box demo</title>
+  <link rel="import" href="weather-box.html" />
+</head>
+<body>
+  <h1>weather-box demo</h1>
+
+  <h2>Metric units, Zurich</h2>
+  <weather-box location="Zurich, CH"></weather-box>
+
+  <h2>Imperial units, Zurich</h2>
+  <weather-box location="Zurich, CH" metric="no"></weather-box>
+
+  <h2>Units and location editable</h2>
+  <input id="location" placeholder="Zurich" />
+  <select id="metric">
+    <option value="yes">Metric</option>
+    <option value="no">Imperial</option>
+  </select>
+  <weather-box id="editable" location="Zurich, CH" metric="yes"></weather-box>
+
+  <script>
+    var weather = document.getElementById("editable"),
+        city    = document.getElementById("location"),
+        metric  = document.getElementById("metric")
+
+    city.addEventListener('keyup', function() {
+      weather.location = this.value
+    })
+
+    metric.addEventListener('change', function() {
+      weather.metric = this.value
+    })
+
+  </script>
+</body>
+</html>
